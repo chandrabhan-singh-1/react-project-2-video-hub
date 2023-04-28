@@ -43,7 +43,7 @@ const Videos = () => {
                 }} allow="accelerometer; autoplay; clipboard-write; fullscreen; captions; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
                 <VStack alignItems={'flex-start'} w={'full'} h={['40vh', '40vh', '25vh']} overflowY={'auto'}>
-                    <Heading>Sample Video 1</Heading>
+                    <Heading>Sample Video</Heading>
                     <Text>
                         Throughout history, songs have been an integral part of human culture, forming the backbone of musical traditions across different regions and eras. Whether in popular music, folk traditions, classical compositions, or religious hymns, songs have a profound impact on individuals and societies, transcending language barriers and leaving a lasting imprint on our collective consciousness.
                     </Text>
