@@ -94,13 +94,13 @@ const MyCarousel = () => (
         <Box w={'full'} h={'100vh'}>
             <Image src={img3} h={'full'} w={'full'} objectFit={'fill'} />
             <Heading bgColor={'blackAlpha.700'} color={'cyan'} {...headingOptions}>
-                Know the Music!
+                Explore the Music!
             </Heading>
         </Box>
         <Box w={'full'} h={'100vh'}>
             <Image src={img4} h={'full'} w={'full'} objectFit={'fill'} />
             <Heading bgColor={'blackAlpha.700'} color={'cyan'} {...headingOptions}>
-                Music is lived!
+                Live the Music!
             </Heading>
         </Box>
         <Box w={'full'} h={'100vh'}>
