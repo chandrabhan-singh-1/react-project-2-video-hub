@@ -34,7 +34,7 @@ const Videos = () => {
 
     return (
         <Stack direction={['column', 'column', 'row']} p={'12px'}>
-            <VStack w={'full'} h={['80vh', '90vh', '100vh']} p={['1', '1', '2']} mb={'8'} spacing={'12'}>
+            <VStack w={'full'} h={['80vh', '90vh', '100vh']} p={['1', '1', '2']} mb={['16', '16', '8']} spacing={'12'}>
                 <iframe src={videoSrc} title="YouTube video player" style={{
                     border: '3px solid cyan',
                     borderRadius: '10px',
@@ -42,7 +42,7 @@ const Videos = () => {
                     width: '90%',
                 }} allow="accelerometer; autoplay; clipboard-write; fullscreen; captions; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
-                <VStack alignItems={'flex-start'} w={'full'} h={['40vh', '40vh', '25vh']} overflowY={'auto'}>
+                <VStack alignItems={'flex-start'} w={'full'} mb={['10', '10', '0']} h={['40vh', '40vh', '25vh']} overflowY={'auto'}>
                     <Heading>Sample Video</Heading>
                     <Text>
                         Throughout history, songs have been an integral part of human culture, forming the backbone of musical traditions across different regions and eras. Whether in popular music, folk traditions, classical compositions, or religious hymns, songs have a profound impact on individuals and societies, transcending language barriers and leaving a lasting imprint on our collective consciousness.

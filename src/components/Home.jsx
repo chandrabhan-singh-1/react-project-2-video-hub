@@ -17,7 +17,7 @@ const headingOptions = {
     transform: 'translate(-50%, -50%)',
     textTransform: 'uppercase',
     p: '3',
-    size: 'xl',
+    size: ['md', 'xl'],
     borderRadius: '10px',
 };
 
@@ -27,11 +27,11 @@ const Home = () => {
             <Box>
                 <MyCarousel />
 
-                <Container maxW={'container.xl'} minH={'100vh'} p={'16'}>
+                <Container maxW={'container.xl'} minH={'100vh'} p={['4', '4', '16']}>
 
                     <Heading
                         textTransform={'uppercase'}
-                        py={'2'}
+                        py={['1', '1', '2']}
                         w={'fit-content'}
                         borderBottom={'2px solid'}
                         m={'auto'}
@@ -76,34 +76,37 @@ const MyCarousel = () => (
         showStatus={false}
     >
 
-        <Box w={'full'} h={'100vh'}>
-
+        <Box w={'full'} h={['50vh', '60vh', 'full']}>
             <Image src={img1} h={'full'} w={'full'} objectFit={'fill'} />
 
             <Heading bgColor={'blackAlpha.700'} color={'cyan'} {...headingOptions}>
                 Music is Love!
             </Heading>
-
         </Box>
-        <Box w={'full'} h={'100vh'}>
+
+        <Box w={'full'} h={['50vh', '60vh', 'full']}>
             <Image src={img2} h={'full'} w={'full'} objectFit={'fill'} />
+
             <Heading bgColor={'blackAlpha.700'} color={'cyan'} {...headingOptions}>
                 Feel the Music!
             </Heading>
         </Box>
-        <Box w={'full'} h={'100vh'}>
+
+        <Box w={'full'} h={['50vh', '60vh', 'full']}>
             <Image src={img3} h={'full'} w={'full'} objectFit={'fill'} />
             <Heading bgColor={'blackAlpha.700'} color={'cyan'} {...headingOptions}>
                 Explore the Music!
             </Heading>
         </Box>
-        <Box w={'full'} h={'100vh'}>
+
+        <Box w={'full'} h={['50vh', '60vh', 'full']}>
             <Image src={img4} h={'full'} w={'full'} objectFit={'fill'} />
             <Heading bgColor={'blackAlpha.700'} color={'cyan'} {...headingOptions}>
                 Live the Music!
             </Heading>
         </Box>
-        <Box w={'full'} h={'100vh'}>
+
+        <Box w={'full'} h={['50vh', '60vh', 'full']}>
             <Image src={img5} h={'full'} w={'full'} objectFit={'fill'} />
             <Heading bgColor={'blackAlpha.700'} color={'cyan'} {...headingOptions}>
                 Music is Life!
