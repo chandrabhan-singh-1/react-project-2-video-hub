@@ -11,109 +11,112 @@ import img5 from '../assets/img5.jpg';
 import png1 from '../assets/png1.png';
 
 const headingOptions = {
-    pos: 'absolute',
-    left: '50%',
-    top: '90%',
-    transform: 'translate(-50%, -50%)',
-    textTransform: 'uppercase',
-    p: '3',
-    size: ['md', 'xl'],
-    borderRadius: '10px',
+  pos: 'absolute',
+  left: '50%',
+  top: '90%',
+  transform: 'translate(-50%, -50%)',
+  textTransform: 'uppercase',
+  p: '3',
+  size: ['md', 'xl'],
+  borderRadius: '10px',
 };
 
 const Home = () => {
-    return (
-        <>
-            <Box>
-                <MyCarousel />
+  return (
+    <>
+      <Box>
+        <MyCarousel />
 
-                <Container maxW={'container.xl'} minH={'100vh'} p={['4', '4', '16']}>
+        <Container maxW={'container.xl'} minH={'100vh'} p={['4', '4', '16']}>
+          <Heading
+            textTransform={'uppercase'}
+            py={['1', '1', '2']}
+            w={'fit-content'}
+            borderBottom={'2px solid'}
+            m={'auto'}
+          >
+            Introduction
+          </Heading>
 
-                    <Heading
-                        textTransform={'uppercase'}
-                        py={['1', '1', '2']}
-                        w={'fit-content'}
-                        borderBottom={'2px solid'}
-                        m={'auto'}
-                    >
-                        Introduction
-                    </Heading>
+          <Stack
+            p={'4'}
+            h={'full'}
+            alignItems={'center'}
+            direction={['column', 'column', 'row']}
+          >
+            <Image
+              src={png1}
+              h={['60', '60', '400']}
+              filter={'hue-rotate(-10deg)'}
+            />
 
-                    <Stack
-                        p={'4'}
-                        h={'full'}
-                        alignItems={'center'}
-                        direction={['column', 'column', 'row']}
-                    >
-
-                        <Image src={png1} h={['60', '60', '400']} filter={'hue-rotate(-10deg)'} />
-
-                        <Text
-                            letterSpacing={'widest'}
-                            lineHeight={'190%'}
-                            p={['4', '4', '12']}
-                            textAlign={'center'}
-                            fontSize={'lg'}
-                        >
-                            Music, like a celestial symphony, resonates through the cosmic tapestry, weaving melodies that caress the very fabric of our existence. It is the ethereal language of emotions, painting vivid landscapes of passion, sorrow, and joy upon the canvas of our souls. With every note, it unlocks the doors of our imagination, inviting us to soar to unfathomable heights, and immerse ourselves in a transcendent realm where time stands still and the beauty of the universe unfolds in harmonious grandeur. Within its resounding embrace, we discover a sanctuary where sorrows are soothed, joys are amplified, and the very essence of our being finds solace in the symphony of existence. Music, the celestial conductor orchestrating the harmonious dance of life, whispers secrets of the universe, echoing the echoes of eternity itself.
-                        </Text>
-                    </Stack>
-
-                </Container>
-
-            </Box>
-
-
-        </>
-    );
+            <Text
+              letterSpacing={'widest'}
+              lineHeight={'190%'}
+              p={['4', '4', '12']}
+              textAlign={'center'}
+              fontSize={'lg'}
+            >
+              Music, like a celestial symphony, resonates through the cosmic
+              tapestry, weaving melodies that caress the very fabric of our
+              existence. It is the ethereal language of emotions, painting vivid
+              landscapes of passion, sorrow, and joy upon the canvas of our
+              souls. With every note, it unlocks the doors of our imagination,
+              inviting us to soar to unfathomable heights, and immerse ourselves
+              in a transcendent realm where time stands still and the beauty of
+              the universe unfolds in harmonious grandeur. Within its resounding
+              embrace, we discover a sanctuary where sorrows are soothed, joys
+              are amplified, and the very essence of our being finds solace in
+              the symphony of existence. Music, the celestial conductor
+              orchestrating the harmonious dance of life, whispers secrets of
+              the universe, echoing the echoes of eternity itself.
+            </Text>
+          </Stack>
+        </Container>
+      </Box>
+    </>
+  );
 };
 
 const MyCarousel = () => (
-    <Carousel
-        autoPlay
-        infiniteLoop
-        interval={1500}
-        showStatus={false}
-    >
+  <Carousel autoPlay infiniteLoop interval={1500} showStatus={false}>
+    <Box w={'full'} h={['50vh', '60vh', '100vh']}>
+      <Image src={img1} h={'full'} w={'full'} objectFit={'fill'} />
 
-        <Box w={'full'} h={['50vh', '60vh', 'full']}>
-            <Image src={img1} h={'full'} w={'full'} objectFit={'fill'} />
+      <Heading bgColor={'blackAlpha.700'} color={'cyan'} {...headingOptions}>
+        Music is Love!
+      </Heading>
+    </Box>
 
-            <Heading bgColor={'blackAlpha.700'} color={'cyan'} {...headingOptions}>
-                Music is Love!
-            </Heading>
-        </Box>
+    <Box w={'full'} h={['50vh', '60vh', '100vh']}>
+      <Image src={img2} h={'full'} w={'full'} objectFit={'fill'} />
 
-        <Box w={'full'} h={['50vh', '60vh', 'full']}>
-            <Image src={img2} h={'full'} w={'full'} objectFit={'fill'} />
+      <Heading bgColor={'blackAlpha.700'} color={'cyan'} {...headingOptions}>
+        Feel the Music!
+      </Heading>
+    </Box>
 
-            <Heading bgColor={'blackAlpha.700'} color={'cyan'} {...headingOptions}>
-                Feel the Music!
-            </Heading>
-        </Box>
+    <Box w={'full'} h={['50vh', '60vh', '100vh']}>
+      <Image src={img3} h={'full'} w={'full'} objectFit={'fill'} />
+      <Heading bgColor={'blackAlpha.700'} color={'cyan'} {...headingOptions}>
+        Explore the Music!
+      </Heading>
+    </Box>
 
-        <Box w={'full'} h={['50vh', '60vh', 'full']}>
-            <Image src={img3} h={'full'} w={'full'} objectFit={'fill'} />
-            <Heading bgColor={'blackAlpha.700'} color={'cyan'} {...headingOptions}>
-                Explore the Music!
-            </Heading>
-        </Box>
+    <Box w={'full'} h={['50vh', '60vh', '100vh']}>
+      <Image src={img4} h={'full'} w={'full'} objectFit={'fill'} />
+      <Heading bgColor={'blackAlpha.700'} color={'cyan'} {...headingOptions}>
+        Live the Music!
+      </Heading>
+    </Box>
 
-        <Box w={'full'} h={['50vh', '60vh', 'full']}>
-            <Image src={img4} h={'full'} w={'full'} objectFit={'fill'} />
-            <Heading bgColor={'blackAlpha.700'} color={'cyan'} {...headingOptions}>
-                Live the Music!
-            </Heading>
-        </Box>
-
-        <Box w={'full'} h={['50vh', '60vh', 'full']}>
-            <Image src={img5} h={'full'} w={'full'} objectFit={'fill'} />
-            <Heading bgColor={'blackAlpha.700'} color={'cyan'} {...headingOptions}>
-                Music is Life!
-            </Heading>
-        </Box>
-
-    </Carousel>
-)
+    <Box w={'full'} h={['50vh', '60vh', '100vh']}>
+      <Image src={img5} h={'full'} w={'full'} objectFit={'fill'} />
+      <Heading bgColor={'blackAlpha.700'} color={'cyan'} {...headingOptions}>
+        Music is Life!
+      </Heading>
+    </Box>
+  </Carousel>
+);
 
 export default Home;
